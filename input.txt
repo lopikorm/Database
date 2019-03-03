@@ -1,0 +1,2 @@
+Goncharov House;Ulyanovsk;Goncharova;15;TRUE;MUSEUM;
+Lenin's monument;Ulyanovsk;Lenin Square;1;TRUE;MONUMENT;
