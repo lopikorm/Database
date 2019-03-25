@@ -1,15 +1,15 @@
-package com.company;
+package com.company.entity;
 
 public class Showplace implements Cloneable{
     private String name;
-    private String city;
-    private String street;
+    private City city;
+    private Street street;
     private Integer building;
     private Boolean free;
     private Category category;
-    private int rating;
+    private Rating rating;
 
-    public Showplace(String name, String city, String street, Integer building, Boolean free, Category category, int rating ) {
+    public Showplace(String name, City city, Street street, Integer building, Boolean free, Category category, Rating rating ) {
         this.name = name;
         this.city = city;
         this.street = street;
@@ -23,7 +23,7 @@ public class Showplace implements Cloneable{
 
         }
     // в методе setRating устанавливаем ограничения на ввод от 1 до 10
-    public void setRating(int rating){
+    /*public void setRating(int rating){
 
         if ((rating>=1)&(rating<=10)){
             this.rating = rating;
@@ -31,6 +31,7 @@ public class Showplace implements Cloneable{
             System.out.println("Ошибка!Рейтинг должен быть в диапазоне от 1 до 10!");
         }
     }
+    */
     public String toString() {
 
        String result = this.getName() != null ? this.getName() + " " : "";
@@ -47,13 +48,11 @@ public class Showplace implements Cloneable{
 
 
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
 
-    public String getCity() { return city; }
+    public String getCity() { return city.getName(); }
 
-    public String getStreet() { return street; }
+    public String getStreet() { return street.getName(); }
 
     public Integer getBuilding() { return building; }
 
@@ -61,7 +60,7 @@ public class Showplace implements Cloneable{
 
     public Enum getCategory() { return category; }
 
-    public Integer getRating() { return rating; }
+    public Enum getRating() { return rating; }
 
 
 
