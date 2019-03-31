@@ -7,12 +7,12 @@ import java.io.IOException;
 public class ReadFile {
     public static String readFile(String fileName) {
         StringBuilder result = new StringBuilder("");
-        // FileInputStream inputStream = null;
+        
         try (FileInputStream inputStream = new FileInputStream(fileName)) {
             while (inputStream.available() > 0) {
                 int intSymbol = inputStream.read();
                 char symbol = (char)intSymbol;
-                //System.out.println(intSymbol);
+                
                 result.append(symbol);
             }
         } catch (FileNotFoundException fnfe) {
