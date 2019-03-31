@@ -6,5 +6,7 @@ public enum Category {
     BAR,
     RESTAURANT,
     PIZZERIA,
+    CHURCH,
+    ARCHITECTURE
 
 }

@@ -1,3 +1,4 @@
 Goncharov House;Ulyanovsk;Goncharova;15;TRUE;MUSEUM;five
 Lenin's monument;Ulyanovsk;Lenin Square;1;TRUE;MONUMENT;seven
 Memorial;Ulyanovsk;Radisheva;6;TRUE;MUSEUM;ten
+Munument to Kolobok;Ulyanovsk;Urickogo;88;TRUE;MONUMENT;six
