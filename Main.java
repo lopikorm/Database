@@ -30,11 +30,7 @@ public class Main {
            String sql;
            stmt = c.createStatement();
 
-           //удаление таблицы, чтобы каждый раз не чистить вручную
-           sql = "DROP TABLE SHOWPLACE ";
-           stmt.executeUpdate(sql);
-           System.out.println("---Table deleted successfully");
-
+          
            sql = "CREATE TABLE SHOWPLACE " +
                    "(ID INT PRIMARY KEY    NOT NULL, " +
                    "NAME            TEXT   NOT NULL, " +
@@ -143,12 +139,7 @@ public class Main {
         System.out.println(fileContent);
 
 
-        /** String[] strings = fileContent.split(";");
-         for(String currentString : strings) {
-         // Showplace() = currentString;
-         System.out.println(currentString);
-         }*/
-
+       
         //создаем массив
 
         List<Showplace> showplaceList = new ArrayList<Showplace>();
@@ -176,8 +167,7 @@ public class Main {
 
             while (iterator1.hasNext()) {
 
-               // WriteFile.writeFile(iterator1.next() + " written by Valera", "E:\Учеба\database\src\com\company\input\input.txt");
-                System.out.println(Thread.currentThread().getName() + ":" + iterator1.next()+  ": " );
+               System.out.println(Thread.currentThread().getName() + ":" + iterator1.next()+  ": " );
                             }
         };
 
